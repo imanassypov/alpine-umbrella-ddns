@@ -3,11 +3,11 @@
 #exit immediately if command exits with ubnormal status
 set -e
 
-UNAME="$1:$2"
-NETWORK="$3"
-RLOGIP="$4"
+#UNAME="$1:$2"
+#NETWORK="$3"
+#RLOGIP="$4"
 
-if [[ -z "$UNAME" || -z "NETWORK" ]]; then
+if [[ -z "$UNAME" || -z "$NETWORK" || -z "$RLOGIP" ]]; then
    echo "One of required variables is not set"
    exit 1
 fi
